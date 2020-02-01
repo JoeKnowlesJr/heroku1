@@ -1,11 +1,12 @@
 const mongoose = require('mongoose');
 const encoder = require('bcrypt');
+let _count;
 
 const UserSchema = new mongoose.Schema({
     id:         { type: String, required: true },
     firstName:  { type: String, required: true },
     lastName:   { type: String, required: true },
-    email:      { type: String, required: false },
+    email:      { type: String, required: true },
     password:   { type: String, required: true },
     company:    { type: String, required: false },
     phone:      { type: String, required: false },
@@ -15,8 +16,7 @@ const UserSchema = new mongoose.Schema({
 const User = mongoose.model('User', UserSchema);
 
 function createUser(user) {
-    User.create({id: User.size, firstName: user.firstName, lastName: user.lastName, email: user.email, password: encoder.hashSync(user.password, 10), company: user.company, phone: user.phone});
-
+    return User.create({id: User.size, firstName: user.firstName, lastName: user.lastName, email: user.email, password: encoder.hashSync(user.password, 10), company: user.company, phone: user.phone, token: ''});
 }
 
 function getUserByEmail(req, res, next) {
