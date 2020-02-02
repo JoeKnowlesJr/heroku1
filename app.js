@@ -9,12 +9,20 @@ const methodOverride = require('method-override');
 
 const connectDB = async () => {
   try {
-    const dbUrl = await mongoose.connect('mongodb+srv://jbk:jbkjbk@cluster0-anrfc.mongodb.net/test?retryWrites=true&w=majority', {
-      useNewUrlParser: true,
-      useCreateIndex: true,
-      useUnifiedTopology: true,
-      useFindAndModify: false
-    });
+    // const dbUrl = await mongoose.connect('mongodb+srv://jbk:jbkjbk@cluster0-anrfc.mongodb.net/test?retryWrites=true&w=majority', {
+    //   useNewUrlParser: true,
+    //   useCreateIndex: true,
+    //   useUnifiedTopology: true,
+    //   useFindAndModify: false
+    // });
+    const dbUrl = "mongodb+srv://jbk:jbkjbk@cluster0-anrfc.mongodb.net/test?retryWrites=true&w=majority";
+    mongoose.connect(dbUrl, err =>{
+      if(err){
+        console.log('Error! '+ err)
+      }else{
+        console.log('Connected to Mongodb')
+      }
+    })    ;
     console.log("MongoDB Conected");
     console.log("************************ " + JSON.stringify(dbUrl) + " *********************");
   } catch (err) {
@@ -24,13 +32,7 @@ const connectDB = async () => {
 };
 // const dbUrl = mongoose.connect('mongodb+srv://jbk:jbkjbk@cluster0-anrfc.mongodb.net/test?retryWrites=true&w=majority', {useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true });
 
-process.on('unhandledRejection', (error, p) => {
-  console.log('=== UNHANDLED REJECTION ===');
-  console.dir(error.stack);
-});
-
 const indexRouter = require('./routes/index');
-// const frontEnd = require('./routes/frontend');
 const usersRouter = require('./routes/users');
 
 const app = express();
