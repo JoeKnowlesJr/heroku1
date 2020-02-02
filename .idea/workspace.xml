@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1074244-88a3-4e0c-83cc-c3e3a3abb2fa" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/jkp/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,11 +51,11 @@
       <recent name="C:\Users\hipjk\Desktop\angular\express\jkp-server\jkp-server\frontend\jkp\src\app\_components\clock" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\hipjk\Desktop\angular\express\jkp-server\jkp-server\public" />
       <recent name="C:\Users\hipjk\Desktop\angular\express\jkp-server\jkp-server\public\jkp\src" />
       <recent name="C:\Users\hipjk\Desktop\angular\express\jkp-server\jkp-server\public\img" />
       <recent name="C:\Users\hipjk\Desktop\angular\express\jkp-server\jkp-server\public\jkp\e2e" />
       <recent name="C:\Users\hipjk\Desktop\angular\express\jkp-server\jkp-server\public\jkp" />
-      <recent name="C:\Users\hipjk\Desktop\angular\express\jkp-server\jkp-server\public" />
     </key>
   </component>
   <component name="RunManager" selected="npm.run">
@@ -100,7 +102,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1580492234076</updated>
-      <workItem from="1580492235751" duration="40392000" />
+      <workItem from="1580492235751" duration="40730000" />
     </task>
     <servers />
   </component>
