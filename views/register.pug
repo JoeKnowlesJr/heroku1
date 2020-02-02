@@ -6,20 +6,26 @@ block content
             .col-md-6.col-md-offset-3
                 h1.display-4.m-b-2 Sign Up
                 // register form
-                form(method='POST' action='/register')
+                form(method='PUT' action='/users/signup')
                     div.form-group
-                        label(for='name') Name:
-                        input#name.form-control(type='text', placeholder='first and last' name='name')
+                        label(for='firstName') Name:
+                        input#firstName.form-control(type='text', placeholder='first name' name='firstName')
+                    div.form-group
+                        label(for='lastName') Name:
+                        input#lastName.form-control(type='text', placeholder='last name' name='lastName')
                     div.form-group
                         label(for='email') Email:
                         input#email.form-control(type='email', placeholder='name@email.com' name='email')
                     div.form-group
-                        label(for='favoriteBook') Favorite Book:
-                        input#favoriteBook.form-control(type='text', placeholder='title of book' name='favoriteBook')
+                        label(for='password') Password:
+                        input#password.form-control(type='password', placeholder='password' name='password')
                     div.form-group
-                        label(for='pw') Password:
-                        input#pw.form-control(type='password' name='password')
+                        label(for='password2') Confirm:
+                        input#password2.form-control(type='password', placeholder='confirm' name='password2')
                     div.form-group
-                        label(for='pw2') Confirm Password:
-                        input#pw2.form-control(type='password' name='confirmPassword')
+                        label(for='company') Company:
+                        input#company.form-control(type='text' name='company')
+                    div.form-group
+                        label(for='phone') Phone:
+                        input#phone.form-control(type='phone' name='phone')
                     button.btn.btn-primary(type='submit') Sign up
