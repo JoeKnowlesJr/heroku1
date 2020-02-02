@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1074244-88a3-4e0c-83cc-c3e3a3abb2fa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/routes/frontend.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/frontend.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,13 +57,27 @@
       <recent name="C:\Users\hipjk\Desktop\angular\express\jkp-server\jkp-server\public" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.run">
     <configuration default="true" type="NodeJSConfigurationType" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
-    <configuration name="jkp" type="NodeJSConfigurationType" working-dir="$PROJECT_DIR$">
+    <configuration name="jkp" type="NodeJSConfigurationType" node-parameters="jkp" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
+    <configuration name="run" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Node.js.jkp" />
+      <item itemvalue="npm.run" />
+    </list>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -86,7 +101,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1580492234076</updated>
-      <workItem from="1580492235751" duration="37666000" />
+      <workItem from="1580492235751" duration="39777000" />
     </task>
     <servers />
   </component>
@@ -94,34 +109,42 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1780" y="196" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580594132332">
+    <state x="1780" y="196" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580666530903">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state x="1780" y="196" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1580594132332" />
+    <state x="1780" y="196" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1580666530903" />
     <state x="2091" y="344" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580657628502">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state x="2091" y="344" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1580657628502" />
+    <state x="2106" y="246" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1580666494550">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2106" y="246" key="#com.intellij.ide.macro.MacrosDialog/0.0.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1580666494550" />
+    <state x="2041" y="239" key="#run" timestamp="1580666545185">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2041" y="239" key="#run/0.0.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1580666545185" />
     <state x="2106" y="296" key="FileChooserDialogImpl" timestamp="1580594045030">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state x="2106" y="296" key="FileChooserDialogImpl/0.0.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1580594045030" />
-    <state width="1899" height="295" key="GridCell.Tab.0.bottom" timestamp="1580610995625">
+    <state width="1899" height="295" key="GridCell.Tab.0.bottom" timestamp="1580666971214">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state width="1899" height="295" key="GridCell.Tab.0.bottom/0.0.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1580610995625" />
-    <state width="1899" height="295" key="GridCell.Tab.0.center" timestamp="1580610995625">
+    <state width="1899" height="295" key="GridCell.Tab.0.bottom/0.0.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1580666971214" />
+    <state width="1899" height="295" key="GridCell.Tab.0.center" timestamp="1580666971214">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state width="1899" height="295" key="GridCell.Tab.0.center/0.0.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1580610995625" />
-    <state width="1899" height="295" key="GridCell.Tab.0.left" timestamp="1580610995625">
+    <state width="1899" height="295" key="GridCell.Tab.0.center/0.0.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1580666971214" />
+    <state width="1899" height="295" key="GridCell.Tab.0.left" timestamp="1580666971214">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state width="1899" height="295" key="GridCell.Tab.0.left/0.0.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1580610995625" />
-    <state width="1899" height="295" key="GridCell.Tab.0.right" timestamp="1580610995625">
+    <state width="1899" height="295" key="GridCell.Tab.0.left/0.0.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1580666971214" />
+    <state width="1899" height="295" key="GridCell.Tab.0.right" timestamp="1580666971214">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state width="1899" height="295" key="GridCell.Tab.0.right/0.0.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1580610995625" />
+    <state width="1899" height="295" key="GridCell.Tab.0.right/0.0.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1580666971214" />
     <state x="2189" y="465" width="348" height="298" key="org.angular.cli.generate" timestamp="1580628245879">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
