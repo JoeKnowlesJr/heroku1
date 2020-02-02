@@ -8,7 +8,7 @@ const bodyParser = require('body-parser');
 const methodOverride = require('method-override');
 
 const dbUrl = mongoose.connect('mongodb+srv://jbk:jbkjbk@cluster0-anrfc.mongodb.net/test?retryWrites=true&w=majority');
-console.log("************************\n" + dbUrl.toString());
+console.log("************************ " + dbUrl.toString() + " *********************");
 
 const indexRouter = require('./routes/index');
 // const frontEnd = require('./routes/frontend');
