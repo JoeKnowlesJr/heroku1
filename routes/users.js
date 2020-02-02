@@ -8,8 +8,8 @@ router.get('/', function(req, res, next) {
   res.send('respond with a resource');
 });
 
-/* PUT add user. */
-router.put('/signup', function(req, res, next) {
+/* POST add user. */
+router.post('/signup', function(req, res, next) {
   const u = req.body.user;
   if (u === null || u === {}) {
     res.status(400).json({status: 'No user object present'});
