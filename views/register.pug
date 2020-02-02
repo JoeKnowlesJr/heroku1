@@ -10,29 +10,52 @@ block content
                     form(method='PUT' action='/users/signup')
                         <tr>
                             <td>First Name: </td>
-                            <td><input#firstName.form-control(type='text', placeholder='first name' name='firstName')></td>
+                            <td>
+                        input#firstName.form-control(type='text', placeholder='first name' name='firstName')
+                        </td>
                         </tr>
                         <tr>
                             <td>Last Name: </td>
-                            <td>input#lastName.form-control(type='text', placeholder='last name' name='lastName')</td>
+                            <td>
+                        input#lastName.form-control(type='text', placeholder='last name' name='lastName')
+                        </td>
                         </tr>
                         <tr>
                             <td>Email: </td>
-                            <td>input#email.form-control(type='email', placeholder='name@email.com' name='email')</td>
+                            <td>
+                        input#email.form-control(type='email', placeholder='name@email.com' name='email')
+                        </td>
                         </tr>
                         <tr>
                             <td>Password: </td>
-                            <td>input#password.form-control(type='password', placeholder='password' name='password')</td>
+                            <td>
+                        input#password.form-control(type='password', placeholder='password' name='password')
+                        </td>
                         </tr>
                         <tr>
                             <td>Confirm: </td>
-                            <td>input#password2.form-control(type='password', placeholder='confirm' name='password2')</td>
+                            <td>
+                        input#password2.form-control(type='password', placeholder='confirm' name='password2')
+                        </td>
                         </tr>
                         <tr>
                             <td>Company: </td>
-                            <td>input#company.form-control(type='text' name='company')</td>
+                            <td>
+                        input#company.form-control(type='text' name='company')
+                        </td>
                         </tr>
                         <tr>
                             <td>Phone: </td>
-                            <td>input#phone.form-control(type='phone' name='phone')</td>
+                            <td>
+                        input#phone.form-control(type='phone' name='phone')
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>
                         button.btn.btn-primary(type='submit') Sign up
+                        </td>
+                        <td>
+                        button.btn.btn-secondary(type='back') Cancel
+                        </td>
+                        </tr>
+                        </table>
