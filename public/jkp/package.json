@@ -2,12 +2,12 @@
   "name": "jkp",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "ng": "../../frontend/jkp/node_modules/.bin/ng",
+    "start": "../../frontend/jkp/node_modules/.bin/ng serve",
+    "build": "../../frontend/jkp/node_modules/.bin/ng build",
+    "test": "../../frontend/jkp/node_modules/.bin/ng test",
+    "lint": "../../frontend/jkp/node_modules/.bin/ng lint",
+    "e2e": "../../frontend/jkp/node_modules/.bin/ng e2e"
   },
   "private": true,
   "dependencies": {
