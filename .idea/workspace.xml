@@ -2,59 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1074244-88a3-4e0c-83cc-c3e3a3abb2fa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/jkp/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/public/jkp/.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/jkp/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/public/jkp/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/jkp/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/jkp/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/jkp/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/jkp/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/jkp/browserslist" beforeDir="false" afterPath="$PROJECT_DIR$/public/jkp/browserslist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/jkp/e2e/protractor.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/jkp/e2e/protractor.conf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/jkp/e2e/src/app.e2e-spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/public/jkp/e2e/src/app.e2e-spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/jkp/e2e/src/app.po.ts" beforeDir="false" afterPath="$PROJECT_DIR$/public/jkp/e2e/src/app.po.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/jkp/e2e/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/jkp/e2e/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/jkp/karma.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/jkp/karma.conf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/jkp/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/jkp/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/jkp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/jkp/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/jkp/src/app/_components/alert/alert.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/jkp/src/app/_components/alert/alert.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/jkp/src/app/_components/alert/alert.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/jkp/src/app/_components/alert/alert.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/jkp/src/app/_components/alert/alert.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/public/jkp/src/app/_components/alert/alert.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/jkp/src/app/_components/alert/alert.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/public/jkp/src/app/_components/alert/alert.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/jkp/src/app/_components/clock/clock.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/jkp/src/app/_components/clock/clock.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/jkp/src/app/_components/clock/clock.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/jkp/src/app/_components/clock/clock.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/jkp/src/app/_components/clock/clock.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/public/jkp/src/app/_components/clock/clock.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/jkp/src/app/_components/clock/clock.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/public/jkp/src/app/_components/clock/clock.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/jkp/src/app/_components/home/home.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/jkp/src/app/_components/home/home.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/jkp/src/app/_components/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/jkp/src/app/_components/home/home.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/jkp/src/app/_components/home/home.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/public/jkp/src/app/_components/home/home.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/jkp/src/app/_components/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/public/jkp/src/app/_components/home/home.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/jkp/src/app/_components/login/login.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/jkp/src/app/_components/login/login.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/jkp/src/app/_components/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/jkp/src/app/_components/login/login.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/jkp/src/app/_components/login/login.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/public/jkp/src/app/_components/login/login.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/jkp/src/app/_components/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/public/jkp/src/app/_components/login/login.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/jkp/src/app/_components/register/register.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/jkp/src/app/_components/register/register.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/jkp/src/app/_components/register/register.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/jkp/src/app/_components/register/register.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/jkp/src/app/_components/register/register.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/public/jkp/src/app/_components/register/register.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/jkp/src/app/_components/register/register.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/public/jkp/src/app/_components/register/register.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/jkp/src/app/_directives/equal-validator.directive.ts" beforeDir="false" afterPath="$PROJECT_DIR$/public/jkp/src/app/_directives/equal-validator.directive.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/jkp/src/app/_models/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/public/jkp/src/app/_models/user.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/jkp/src/app/_services/alert.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/public/jkp/src/app/_services/alert.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/jkp/src/app/_services/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/public/jkp/src/app/_services/auth.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/jkp/src/app/_services/db.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/public/jkp/src/app/_services/db.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/jkp/src/app/_services/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/public/jkp/src/app/_services/user.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/jkp/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/jkp/src/app/app.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/jkp/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/jkp/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/jkp/src/app/app.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/public/jkp/src/app/app.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/jkp/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/public/jkp/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/jkp/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/public/jkp/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/jkp/src/app/app.routing.ts" beforeDir="false" afterPath="$PROJECT_DIR$/public/jkp/src/app/app.routing.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/jkp/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/public/jkp/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/jkp/src/polyfills.ts" beforeDir="false" afterPath="$PROJECT_DIR$/public/jkp/src/polyfills.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/jkp/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/jkp/src/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/jkp/src/test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/public/jkp/src/test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/jkp/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/jkp/tsconfig.app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/jkp/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/jkp/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/jkp/tsconfig.spec.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/jkp/tsconfig.spec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/jkp/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/jkp/tslint.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +86,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1580492234076</updated>
-      <workItem from="1580492235751" duration="32086000" />
+      <workItem from="1580492235751" duration="32167000" />
     </task>
     <servers />
   </component>
