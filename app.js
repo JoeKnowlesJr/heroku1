@@ -7,8 +7,23 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const methodOverride = require('method-override');
 
-const dbUrl = mongoose.connect('mongodb+srv://jbk:jbkjbk@cluster0-anrfc.mongodb.net/test?retryWrites=true&w=majority', {useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true });
-console.log("************************ " + JSON.stringify(dbUrl) + " *********************");
+const connectDB = async () => {
+  try {
+    const dbUrl = await mongoose.connect('mongodb+srv://jbk:jbkjbk@cluster0-anrfc.mongodb.net/test?retryWrites=true&w=majority', {
+      useNewUrlParser: true,
+      useCreateIndex: true,
+      useUnifiedTopology: true,
+      useFindAndModify: false
+    });
+    console.log("MongoDB Conected");
+    console.log("************************ " + JSON.stringify(dbUrl) + " *********************");
+  } catch (err) {
+    console.error(err.message);
+    process.exit(1);
+  }
+};
+// const dbUrl = mongoose.connect('mongodb+srv://jbk:jbkjbk@cluster0-anrfc.mongodb.net/test?retryWrites=true&w=majority', {useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true });
+
 
 const indexRouter = require('./routes/index');
 // const frontEnd = require('./routes/frontend');
