@@ -10,8 +10,8 @@ const methodOverride = require('method-override');
 // const dbUrl = mongoose.connect('mongodb+srv://jbk:jbkjbk@cluster0-anrfc.mongodb.net/test?retryWrites=true&w=majority');
 // console.log(dbUrl);
 
-// const indexRouter = require('./routes/index');
-const frontEnd = require('./routes/frontend');
+const indexRouter = require('./routes/index');
+// const frontEnd = require('./routes/frontend');
 const usersRouter = require('./routes/users');
 
 const app = express();
@@ -26,7 +26,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', frontEnd);
+app.use('/', indexRouter);
 
 app.use('/users', usersRouter);
 
