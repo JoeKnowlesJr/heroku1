@@ -12,9 +12,8 @@
     "http-errors": "~1.6.3",
     "mongoose": "^5.8.10",
     "morgan": "~1.9.1",
-    "pug": "2.0.0-beta11"
-  },
-  "devDependencies": {
+    "pug": "2.0.0-beta11",
     "bcrypt": "^3.0.7"
-  }
+  },
+  "devDependencies": {}
 }
