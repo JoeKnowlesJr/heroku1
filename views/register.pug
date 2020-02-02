@@ -2,30 +2,31 @@ extends layout
 
 block content
     .main.container
-        .row
+        .row.center
             .col-md-6.col-md-offset-3
                 h1.display-4.m-b-2 Sign Up
                 // register form
-                form(method='PUT' action='/users/signup')
-                    div.form-group
-                        label(for='firstName') Name:
-                        input#firstName.form-control(type='text', placeholder='first name' name='firstName')
-                    div.form-group
-                        label(for='lastName') Name:
-                        input#lastName.form-control(type='text', placeholder='last name' name='lastName')
-                    div.form-group
-                        label(for='email') Email:
-                        input#email.form-control(type='email', placeholder='name@email.com' name='email')
-                    div.form-group
-                        label(for='password') Password:
-                        input#password.form-control(type='password', placeholder='password' name='password')
-                    div.form-group
-                        label(for='password2') Confirm:
-                        input#password2.form-control(type='password', placeholder='confirm' name='password2')
-                    div.form-group
-                        label(for='company') Company:
-                        input#company.form-control(type='text' name='company')
-                    div.form-group
-                        label(for='phone') Phone:
-                        input#phone.form-control(type='phone' name='phone')
-                    button.btn.btn-primary(type='submit') Sign up
+                table
+                    form(method='PUT' action='/users/signup')
+                        tr
+                            td First Name:
+                            input#firstName.form-control(type='text', placeholder='first name' name='firstName')
+                        tr
+                            td Last Name:
+                            input#lastName.form-control(type='text', placeholder='last name' name='lastName')
+                        tr
+                            td Email:
+                            input#email.form-control(type='email', placeholder='name@email.com' name='email')
+                        tr
+                            td Password:
+                            input#password.form-control(type='password', placeholder='password' name='password')
+                        tr
+                            td Confirm:
+                            input#password2.form-control(type='password', placeholder='confirm' name='password2')
+                        tr
+                            td Company:
+                            input#company.form-control(type='text' name='company')
+                        tr
+                            td Phone:
+                            input#phone.form-control(type='phone' name='phone')
+                        button.btn.btn-primary(type='submit') Sign up
