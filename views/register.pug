@@ -6,27 +6,33 @@ block content
             .col-md-6.col-md-offset-3
                 h1.display-4.m-b-2 Sign Up
                 // register form
-                table
+                <table>
                     form(method='PUT' action='/users/signup')
-                        tr
-                            td First Name:
-                            input#firstName.form-control(type='text', placeholder='first name' name='firstName')
-                        tr
-                            td Last Name:
-                            input#lastName.form-control(type='text', placeholder='last name' name='lastName')
-                        tr
-                            td Email:
-                            input#email.form-control(type='email', placeholder='name@email.com' name='email')
-                        tr
-                            td Password:
-                            input#password.form-control(type='password', placeholder='password' name='password')
-                        tr
-                            td Confirm:
-                            input#password2.form-control(type='password', placeholder='confirm' name='password2')
-                        tr
-                            td Company:
-                            input#company.form-control(type='text' name='company')
-                        tr
-                            td Phone:
-                            input#phone.form-control(type='phone' name='phone')
+                        <tr>
+                            <td>First Name: </td>
+                            <td>input#firstName.form-control(type='text', placeholder='first name' name='firstName')</td>
+                        </tr>
+                        <tr>
+                            <td>Last Name: </td>
+                            <td>input#lastName.form-control(type='text', placeholder='last name' name='lastName')</td>
+                        </tr>
+                        <tr>
+                            <td>Email: </td>
+                            <td>input#email.form-control(type='email', placeholder='name@email.com' name='email')</td>
+                        </tr>
+                        <tr>
+                            <td>Password: </td>
+                            <td>input#password.form-control(type='password', placeholder='password' name='password')</td>
+                        </tr>
+                        <tr>
+                            <td>Confirm: </td>
+                            <td>input#password2.form-control(type='password', placeholder='confirm' name='password2')</td>
+                        </tr>
+                        <tr>
+                            <td>Company: </td>
+                            <td>input#company.form-control(type='text' name='company')</td>
+                        </tr>
+                        <tr>
+                            <td>Phone: </td>
+                            <td>input#phone.form-control(type='phone' name='phone')</td>
                         button.btn.btn-primary(type='submit') Sign up
