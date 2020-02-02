@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1074244-88a3-4e0c-83cc-c3e3a3abb2fa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/jkp/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/jkp/src/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +87,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1580492234076</updated>
-      <workItem from="1580492235751" duration="34107000" />
+      <workItem from="1580492235751" duration="34643000" />
     </task>
     <servers />
   </component>
@@ -99,6 +99,10 @@
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state x="1780" y="196" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1580594132332" />
+    <state x="2091" y="344" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580657628502">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2091" y="344" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1580657628502" />
     <state x="2106" y="296" key="FileChooserDialogImpl" timestamp="1580594045030">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
