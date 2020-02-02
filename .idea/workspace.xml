@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1074244-88a3-4e0c-83cc-c3e3a3abb2fa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/frontend.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/frontend.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,6 +50,7 @@
       <recent name="C:\Users\hipjk\Desktop\angular\express\jkp-server\jkp-server\frontend\jkp\src\app\_components\alert" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\hipjk\Desktop\angular\express\jkp-server\jkp-server\public" />
       <recent name="C:\Users\hipjk\Desktop\angular\express\jkp-server\jkp-server\frontend" />
       <recent name="C:\Users\hipjk\Desktop\angular\express\jkp-server\jkp-server\models" />
     </key>
@@ -85,7 +85,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1580492234076</updated>
-      <workItem from="1580492235751" duration="31178000" />
+      <workItem from="1580492235751" duration="31321000" />
     </task>
     <servers />
   </component>
