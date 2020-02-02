@@ -9,7 +9,9 @@ block content
                 <table>
                     form(method='POST' action='/users/signup')
                         <tr>
-                            <td>First Name: </td>
+                            <td>
+                        label(for='firstName') Name:
+                        </td>
                             <td>
                         input#firstName.form-control(type='text', placeholder='first name' name='firstName')
                         </td>
