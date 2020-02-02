@@ -7,8 +7,8 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const methodOverride = require('method-override');
 
-mongoose.connect('mongodb+srv://jbk:jbkjbk@cluster0-anrfc.mongodb.net/test?retryWrites=true&w=majority');
-console.log(mongoose);
+const dbUrl = mongoose.connect('mongodb+srv://jbk:jbkjbk@cluster0-anrfc.mongodb.net/test?retryWrites=true&w=majority');
+console.log(dbUrl);
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
