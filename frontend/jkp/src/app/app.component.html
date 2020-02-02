@@ -1,0 +1,37 @@
+<div class="toolbar" role="banner">
+  <img
+    width="40"
+    alt="My Logo"
+    src="./../assets/img/me.png"
+  />
+  <span (click)="goHome()">Joe's Portfolio</span>
+  <ng-container
+    *ngIf="isLoggedIn; then loggedIn; else notLoggedIn">
+  </ng-container>
+
+  <ng-template #loggedIn>
+    <span class="btn-bar-login">
+      <button class="btn-login" (click)="onLogoutClick()">Sign out</button>
+      <app-clock></app-clock>
+    </span>
+  </ng-template>
+
+  <ng-template #notLoggedIn>
+    <span class="btn-bar-login">
+      <button class="btn-login" (click)="onLoginClick()">Sign in</button>
+      <button class="btn-login" (click)="onRegisterClick()">Sign up</button>
+      <app-clock></app-clock>
+    </span>
+  </ng-template>
+
+</div>
+
+<router-outlet></router-outlet>
+
+<div id="popup-login" *ngIf="showLogin">
+    <app-login></app-login>
+</div>
+
+<div id="popup-register" *ngIf="showRegister">
+  <app-register></app-register>
+</div>

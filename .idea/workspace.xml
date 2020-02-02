@@ -2,11 +2,62 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1074244-88a3-4e0c-83cc-c3e3a3abb2fa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/frontend.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/jkp/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/jkp/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/jkp/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/jkp/angular.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/jkp/browserslist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/jkp/e2e/protractor.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/jkp/e2e/src/app.e2e-spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/jkp/e2e/src/app.po.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/jkp/e2e/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/jkp/karma.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/jkp/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/jkp/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/jkp/src/app/_components/alert/alert.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/jkp/src/app/_components/alert/alert.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/jkp/src/app/_components/alert/alert.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/jkp/src/app/_components/alert/alert.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/jkp/src/app/_components/clock/clock.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/jkp/src/app/_components/clock/clock.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/jkp/src/app/_components/clock/clock.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/jkp/src/app/_components/clock/clock.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/jkp/src/app/_components/home/home.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/jkp/src/app/_components/home/home.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/jkp/src/app/_components/home/home.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/jkp/src/app/_components/home/home.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/jkp/src/app/_components/login/login.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/jkp/src/app/_components/login/login.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/jkp/src/app/_components/login/login.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/jkp/src/app/_components/login/login.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/jkp/src/app/_components/register/register.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/jkp/src/app/_components/register/register.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/jkp/src/app/_components/register/register.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/jkp/src/app/_components/register/register.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/jkp/src/app/_directives/equal-validator.directive.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/jkp/src/app/_models/user.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/jkp/src/app/_services/alert.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/jkp/src/app/_services/auth.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/jkp/src/app/_services/db.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/jkp/src/app/_services/user.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/jkp/src/app/app.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/jkp/src/app/app.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/jkp/src/app/app.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/jkp/src/app/app.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/jkp/src/app/app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/jkp/src/app/app.routing.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/jkp/src/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/jkp/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/jkp/src/polyfills.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/jkp/src/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/jkp/src/test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/jkp/tsconfig.app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/jkp/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/jkp/tsconfig.spec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/jkp/tslint.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +70,7 @@
         <option value="Pug File" />
         <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -38,13 +90,17 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.13.1" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend/jkp/src/app/_components/register" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\hipjk\Desktop\angular\express\jkp-server\jkp-server" />
+      <recent name="C:\Users\hipjk\Desktop\angular\express\jkp-server\jkp-server\frontend\jkp\src\app\_components\register" />
+      <recent name="C:\Users\hipjk\Desktop\angular\express\jkp-server\jkp-server\frontend\jkp\src\app\_components\login" />
+      <recent name="C:\Users\hipjk\Desktop\angular\express\jkp-server\jkp-server\frontend\jkp\src\app\_components\home" />
+      <recent name="C:\Users\hipjk\Desktop\angular\express\jkp-server\jkp-server\frontend\jkp\src\app\_components\clock" />
+      <recent name="C:\Users\hipjk\Desktop\angular\express\jkp-server\jkp-server\frontend\jkp\src\app\_components\alert" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\hipjk\Desktop\angular\express\jkp-server\jkp-server\models" />
@@ -80,7 +136,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1580492234076</updated>
-      <workItem from="1580492235751" duration="26941000" />
+      <workItem from="1580492235751" duration="29555000" />
     </task>
     <servers />
   </component>
@@ -112,9 +168,13 @@
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state width="1899" height="295" key="GridCell.Tab.0.right/0.0.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1580610995625" />
-    <state x="1989" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1580542152771">
+    <state x="2189" y="465" width="348" height="298" key="org.angular.cli.generate" timestamp="1580628245879">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state x="1989" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1580542152771" />
+    <state x="2189" y="465" width="348" height="298" key="org.angular.cli.generate/0.0.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1580628245879" />
+    <state x="2245" y="187" width="672" height="678" key="search.everywhere.popup" timestamp="1580627983245">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2245" y="187" width="672" height="678" key="search.everywhere.popup/0.0.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1580627983245" />
   </component>
 </project>
