@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
 const encoder = require('bcrypt');
-let _count;
 
 const UserSchema = new mongoose.Schema({
     id:         { type: String, required: true },
@@ -17,6 +16,12 @@ const User = mongoose.model('User', UserSchema);
 
 function createUser(user) {
     return User.create({id: User.size, firstName: user.firstName, lastName: user.lastName, email: user.email, password: encoder.hashSync(user.password, 10), company: user.company, phone: user.phone, token: ''});
+}
+
+function findByEmail(_email) {
+    User.find({email: _email}).exec((u) => {
+        return u;
+    });
 }
 
 function getUserByEmail(req, res, next) {

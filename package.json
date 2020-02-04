@@ -20,5 +20,11 @@
     "protractor": "^5.4.3",
     "pug": "^2.0.4"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@istanbuljs/nyc-config-typescript": "^1.0.1",
+    "express-session": "^1.17.0",
+    "nyc": "^15.0.0",
+    "source-map-support": "^0.5.16",
+    "ts-node": "^8.6.2"
+  }
 }
