@@ -5,7 +5,7 @@ const uServ = require('../services/user.service');
 const auth = require('../services/auth.service');
 
 router.post('/login', function(req, res, next) {
-
+    auth.authenticate(req, res, next);
 });
 
 module.exports = router;

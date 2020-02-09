@@ -1,19 +1,27 @@
-const bCrypt = require('bcrypt');
 const users = require('./user.service');
 
-function authenticate(name, pass, fn) {
-    if (!module.parent) console.log('authenticating %s:%s', name, pass);
-    const user = users.getUserByEmail();
-    // query the db for the given username
-    if (!user) return fn(new Error('cannot find user'));
-    // apply the same algorithm to the POSTed password, applying
-    // the hash against the pass / salt, if there is a match we
-    // found the user
-    hash({ password: pass, salt: user.salt }, function (err, pass, salt, hash) {
-        if (err) return fn(err);
-        if (hash === user.hash) return fn(null, user);
-        fn(new Error('invalid password'));
+function authenticate(req, res, next) {
+    if (!module.parent) console.log('authenticating %s:%s', req.body.email, req.body.password);
+    users.getUserByEmail(req, res, next);
+    if (!req.userDocument) return next(new Error('cannot find user'));
+    const pw = req.body.password;
+    // bCrypt.({ data: pw, hash: req.userDocument.password }).th
+    bcrypt.compare(pw, req.userDocument.password, (err, match) => {
+        if(match) {
+            // passwords match
+            callback(null, true);
+        } else {
+            // passwords do not match
+            callback('Invalid password match', null);
+        }
     });
+
+
+
+    //     if (err) return fn(err);
+    //     if (hash === user.hash) return fn(null, user);
+    //     fn(new Error('invalid password'));
+    // });
 }
 
 function restrict(req, res, next) {

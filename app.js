@@ -7,7 +7,7 @@ const session = require('express-session');
 const db = require('./db');
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
-const {authenticate} = require("./services/auth.service");
+const { authenticate } = require("./services/auth.service");
 
 const app = express();
 
@@ -41,8 +41,8 @@ app.use(function(req, res, next){
   delete req.session.error;
   delete req.session.success;
   res.locals.message = '';
-  if (err) res.locals.message = '<p class="msg error">' + err + '</p>';
-  if (msg) res.locals.message = '<p class="msg success">' + msg + '</p>';
+  if (err) res.locals.message = '<p class="msg error"/' + err + '>';
+  if (msg) res.locals.message = '<p class="msg success"/' + msg + '>';
   next();
 });
 
