@@ -1,3 +1,5 @@
+import {User} from "../models/user";
+
 const express = require('express');
 const router = express.Router();
 const createError = require('http-errors');
@@ -10,12 +12,33 @@ router.get('/', function(req, res, next) {
 
 /* POST add user. */
 router.post('/signup', function(req, res, next) {
-  const u = req.body.user;
-  if (u === null || u === {}) {
-    res.status(400).json({status: 'No user object present'});
-    next(createError(404));
+  let exists = false;
+  let user = new User();
+  User.find({email: req.body.email}, (err, data) => {
+    if (err) {
+      console.log(err);
+    } else {
+      user = data;
+      exists = true;
+    }
+  });
+  if (exists) {
+
+  } else {
+    user.firstName = req.body.firstName;
+    user.lastName = req.body.lastName;
+    user.email = req.body.email;
+    user.password = req.body.password;
+    user.company = req.body.company;
+    user.phone = req.body.phone;
+    user.save((err) => {
+      if (err) {
+        console.log(err);
+      } else {
+        res.redirect('/');
+      }
+    });
   }
-  res.send(uServ.createUser(u));
 });
 
 module.exports = router;
