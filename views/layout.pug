@@ -1,35 +1,32 @@
 doctype html
 html
   head
-    title Knowledgebase
+    title Joe's Portfolio
     link(rel='stylesheet' href='/stylesheets/bootstrap.min.css')
     link(rel='stylesheet' href='/stylesheets/style.css')
   body
-    nav.navbar.navbar-inverse
-      .container
-        .navbar-header
-          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
-            span.sr-only Toggle navigation
-            span.icon-bar
-            span.icon-bar
-            span.icon-bar
-          a.navbar-brand(href='/') KnowledgeBase
-        #navbar.collapse.navbar-collapse
-          ul.nav.navbar-nav
-            li
-              a(href='/') Home
-            if user
-              li
-                a(href='/articles/add') Add Article
-          ul.nav.navbar-nav.navbar-right
-            if user
-              li
-                a(href='/users/logout') Logout
-            else
-              li
-                a(href='/users/register') Register
-              li
-                a(href='/users/login') Login
+    <div class="header">
+      <div class="title">
+        <div class="top-display">
+          <span class="page">Home</span>
+        </div>
+        <h1>joeknowles.com</h1>
+        <div class="hdr-btn-wrapper">
+          <div class="hdr-btns">
+            <a href="projects.html" class="hdr-btn">Projects</a>
+            <a href="about.html"><span class="hdr-btn">About</span></a>
+            <a href="contact.html"><span class="hdr-btn">Contact</span></a>
+    if user
+      <a href="/users/logout"><span class="hdr-btn">Logout</span></a>
+    else
+      <a href="/users/register"><span class="hdr-btn">Register</span></a>
+      <a href="/users/login"><span class="hdr-btn">Login</span></a>
+
+          </div>
+      </div>
+      </div>
+    </div>
+
     .container
       != messages('message', locals)
       if errors

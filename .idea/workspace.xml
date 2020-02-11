@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1074244-88a3-4e0c-83cc-c3e3a3abb2fa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/layout2.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/userList.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/passport.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/passport.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/layout.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout.pug" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +131,7 @@
       <option name="presentableId" value="Default" />
       <updated>1580492234076</updated>
       <workItem from="1580492235751" duration="84667000" />
-      <workItem from="1581286593872" duration="24248000" />
+      <workItem from="1581286593872" duration="36810000" />
     </task>
     <servers />
   </component>
@@ -131,6 +139,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1918" y="199" key="#Other_File_Types" timestamp="1581453599099">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1918" y="199" key="#Other_File_Types/0.0.1366.768/1366.0.1920.1080@1366.0.1920.1080" timestamp="1581453599099" />
     <state x="1780" y="196" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580666530903">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>

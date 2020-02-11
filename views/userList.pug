@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  table
+    thead
+      tr
+        th ID
+        th First
+        th Last
+        th Email
+        th Company
+        th Phone
+    tbody
+    if users
+      each user in users
+        tr
+          td #{user._id}
+          td #{user.firstName}
+          td #{user.lastName}
+          td #{user.email}
+          td #{user.company}
+          td #{user.phone}

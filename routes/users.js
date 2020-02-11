@@ -5,14 +5,7 @@ const router = express.Router();
 const bcrypt = require('bcryptjs');
 const passport = require('passport');
 
-router.get('/list', function(req, res){
-  User.find({}, (err, data) => {
-    if (err) throw err;
-    res.render('index', {
-      users:data
-    });
-  });
-});
+
 
 // Register Form
 router.get('/register', function(req, res){
@@ -46,7 +39,6 @@ router.post('/register', function(req, res){
     });
   } else {
     let newUser = new User({
-      id:'',
       firstName:firstName,
       lastName:lastName,
       email:email,
@@ -83,17 +75,26 @@ router.get('/login', function(req, res){
 
 // Login Process
 router.post('/login', function(req, res, next){
+  const user = {
+    email: req.body.email,
+    password: req.body.password
+  };
+  console.log(user);
   passport.authenticate('local', {
-    successRedirect:'/',
+    successRedirect:'/list',
     failureRedirect:'/users/login',
     failureFlash: true
   },
       function(err, user, info) {
+        console.log('**** inside callback ****');
+        console.log(err + '\n');
+        console.log(user + '\n');
+        console.log(info + '\n');
         if (err) return next(err);
         if (!user) { return res.redirect('login'); }
         req.login(user, function(err) {
           if (err) { return next(err); }
-          return res.redirectr('/users/' + user.id);
+          return res.redirect('/users/list' + user.id);
         });
       })(req, res, next);
 });
@@ -103,6 +104,15 @@ router.get('/logout', function(req, res){
   req.logout();
   req.flash('success', 'You are logged out');
   res.redirect('/users/login');
+});
+
+router.get('/list', function(req, res){
+  User.find({}, (err, data) => {
+    if (err) throw err;
+    res.render('userList', {
+      users:data
+    });
+  });
 });
 
 module.exports = router;
