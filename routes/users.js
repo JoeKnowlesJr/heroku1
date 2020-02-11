@@ -16,6 +16,7 @@ router.get('/list', function(req, res){
 
 // Register Form
 router.get('/register', function(req, res){
+  console.log('Registering...');
   res.render('register');
 });
 
