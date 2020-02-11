@@ -1,14 +1,5 @@
-export class User {
-    id;
-    firstName;
-    lastName;
-    email;
-    password;
-    company;
-    phone;
-}
-
 const mongoose = require("mongoose");
+
 const Users = new mongoose.Schema({
     id: {type: String, required: false},
     firstName: {type: String, required: true},
@@ -37,4 +28,4 @@ Users.statics.listPersons = async function() {
     return await this.find();
 };
 
-module.exports = mongoose.model('users', Users);
+// module.exports = mongoose.model('users', Users);
