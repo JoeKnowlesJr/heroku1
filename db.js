@@ -1,10 +1,5 @@
 const mongoose = require('mongoose');
 const DB_CONNECTION = 'mongodb://uflc9c8z9wm8n6cxsrrs:azWGaGTdnQmY4XtZn9II@bryanxlnnmcitzv-mongodb.services.clever-cloud.com:27017/bryanxlnnmcitzv';
-const options = {
-    keepAlive: true,
-    keepAliveInitialDelay: 30000,
-    useNewUrlParser: true
-};
 
 mongoose.connect(
     DB_CONNECTION,
@@ -12,11 +7,7 @@ mongoose.connect(
         useNewUrlParser: true,
         useUnifiedTopology: true,
         useFindAndModify: false,
-        useCreateIndex: true,
-        // dbName: 'jkp',
-        // user: 'jbk',
-        // pass: 'jbkjbk'
-
+        useCreateIndex: true
     })
     .then(console.log('Connected to DB!'))
     .catch(err =>  {

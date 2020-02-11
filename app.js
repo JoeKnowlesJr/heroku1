@@ -1,10 +1,13 @@
 const express = require('express');
 const path = require('path');
+const db = require('./db');
+const expressValidator = require('express-validator');
+const flash = require('connect-flash');
+const passport = require('passport');
 const createError = require('http-errors');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const session = require('express-session');
-const db = require('./db');
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 const { authenticate } = require("./services/auth.service");
@@ -19,15 +22,7 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-// app.use(express.static(path.join(__dirname, 'public')));
-
-app.use('/', indexRouter);
-
-app.use('/users', usersRouter);
-
-app.get('/', function(req, res) {
-    res.redirect('/login');
-});
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(session({
     resave: false, // don't save session if unmodified
@@ -35,56 +30,54 @@ app.use(session({
     secret: 'shhhh, very secret'
 }));
 
-app.use(function(req, res, next){
-    const err = req.session.error;
-    const msg = req.session.success;
-    delete req.session.error;
-    delete req.session.success;
-    res.locals.message = '';
-    if (err) res.locals.message = '<p class="msg error"/' + err + '>';
-    if (msg) res.locals.message = '<p class="msg success"/' + msg + '>';
+// Express Messages Middleware
+app.use(require('connect-flash')());
+app.use(function (req, res, next) {
+    res.locals.messages = require('express-messages')(req, res);
     next();
 });
 
-app.post('/login', function(req, res){
-    authenticate(req.body.username, req.body.password, function(err, user){
-        if (user) {
-            // Regenerate session when signing in
-            // to prevent fixation
-            req.session.regenerate(function(){
-                // Store the user's primary key
-                // in the session store to be retrieved,
-                // or in this case the entire user object
-                req.session.user = user;
-                console.log('************************************* ' + JSON.stringify(user));
-                req.session.success = 'Authenticated as ' + user.name
-                    + ' click to <a href="/logout">logout</a>. '
-                    + ' You may now access <a href="/restricted">/restricted</a>.';
-                res.redirect('back');
-            });
-        } else {
-            req.session.error = 'Authentication failed, please check your '
-                + ' username and password.'
-                + ' (use "tj" and "foobar")';
-            res.redirect('/login');
+// Express Validator Middleware
+app.use(expressValidator({
+    errorFormatter: function(param, msg, value) {
+        let namespace = param.split('.')
+            , root = namespace.shift()
+            , formParam = root;
+
+        while(namespace.length) {
+            formParam += '[' + namespace.shift() + ']';
         }
+        return {
+            param : formParam,
+            msg   : msg,
+            value : value
+        };
+    }
+}));
+
+// Passport Config
+require('./config/passport')(passport);
+// Passport Middleware
+app.use(passport.initialize());
+app.use(passport.session());
+
+app.get('*', function(req, res, next){
+    res.locals.user = req.user || null;
+    next();
+});
+
+// Home Route
+app.get('/', function(req, res){
+    User.find({}, (err, user) => {
+
+    });
+    res.render('index', {
+
     });
 });
 
-// catch 404 and forward to error handler
-app.use(function(req, res, next) {
-    next(createError(404));
-});
-
-// error handler
-app.use(function(err, req, res, next) {
-    // set locals, only providing error in development
-    res.locals.message = err.message;
-    res.locals.error = req.app.get('env') === 'development' ? err : {};
-
-    // render the error page
-    res.status(err.status || 500);
-    res.render('error');
-});
+// Route Files
+let users = require('./routes/users');
+app.use('/users', users);
 
 module.exports = app;

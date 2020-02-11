@@ -4,4 +4,12 @@ block content
   h1= title
   p Welcome to #{title}
   p Hello there!
+
+  if users
+    each user in users
+      p Name: #{user.firstName}  #{user.lastName}
+      p Email: #{user.email}
+      p Company: #{user.company}
+      hr
+
   a(href='register') Register

@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 
-const Users = new mongoose.Schema({
+// User Schema
+const UserSchema = mongoose.Schema({
     id: {type: String, required: false},
     firstName: {type: String, required: true},
     lastName: {type: String, required: true},
@@ -10,22 +11,22 @@ const Users = new mongoose.Schema({
     phone: {type: String, required: false}
 }, {timestamps: true});
 
-Users.statics.createUser = async function(user) {
-    const User = new this(user);
-    return await User.save(user);
-};
+module.exports = mongoose.model('User', UserSchema);
 
-Users.statics.deleteUser = async function(user) {
-    const User = new this(user);
-    return User.delete();
-};
-
-Users.statics.findByEmail = async function(e) {
-    return await this.find({email: e});
-};
-
-Users.statics.listPersons = async function() {
-    return await this.find();
-};
-
-// module.exports = mongoose.model('users', Users);
+// User.statics.createUser = async function(user) {
+//     const User = new this(user);
+//     return await User.save(user);
+// };
+//
+// User.statics.deleteUser = async function(user) {
+//     const User = new this(user);
+//     return User.delete();
+// };
+//
+// User.statics.findByEmail = async function(e) {
+//     return await this.find({email: e});
+// };
+//
+// User.statics.listPersons = async function() {
+//     return await this.find();
+// };
