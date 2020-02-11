@@ -66,6 +66,8 @@ app.get('*', function(req, res, next){
     next();
 });
 
+const User = require('./models/user');
+
 // Home Route
 app.get('/', function(req, res){
     User.find({}, (err, user) => {
