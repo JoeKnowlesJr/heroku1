@@ -62,6 +62,8 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 app.get('*', function(req, res, next){
+    console.log('*** all routes ***');
+    alert('ALL ROUTES');
     res.locals.user = req.user || null;
     next();
 });
@@ -70,11 +72,10 @@ const User = require('./models/user');
 
 // Home Route
 app.get('/', function(req, res){
-    User.find({}, (err, user) => {
-
-    });
-    res.render('index', {
-
+    User.find({}, (err, data) => {
+        res.render('index', {
+            users:data
+        });
     });
 });
 

@@ -76,17 +76,26 @@ router.post('/register', function(req, res){
 
 // Login Form
 router.get('/login', function(req, res){
+  console.log('Getting login form');
   res.render('login');
 });
 
 // Login Process
 router.post('/login', function(req, res, next){
-  console.log(req.body);
+  console.log('Logging in...' + req.body);
   passport.authenticate('local', {
     successRedirect:'/',
     failureRedirect:'/users/login',
     failureFlash: true
-  })(req, res, next);
+  },
+      function(err, user, info) {
+        if (err) return next(err);
+        if (!user) { return res.redirect('login'); }
+        req.login(user, function(err) {
+          if (err) { return next(err); }
+          return res.redirectr('/users/' + user.id);
+        });
+      })(req, res, next);
 });
 
 // logout

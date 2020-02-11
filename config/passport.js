@@ -7,11 +7,14 @@ module.exports = function(passport){
     passport.use(new LocalStrategy(function(email, password, done){
         // Match Email
         let query = {email:email};
+        console.log('Query: ' + query);
         User.findOne(query, function(err, user){
             if(err) throw err;
             if(!user){
                 return done(null, false, {message: 'No user found'});
             }
+
+            console.log(password + '\n' + user.password);
 
             // Match Password
             bcrypt.compare(password, user.password, function(err, isMatch){
