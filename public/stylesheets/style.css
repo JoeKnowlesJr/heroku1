@@ -108,3 +108,8 @@ footer {
   width: 50%;
   margin: 1% 25%;
 }
+
+.login-box>h1 {
+  display: inline-block;
+  margin: 0 auto;
+}

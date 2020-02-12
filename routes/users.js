@@ -87,10 +87,10 @@ router.post('/login', function(req, res, next){
   },
       function(err, user, info) {
         if (err) return next(err);
-        if (!user) { return res.redirect('login'); }
+        if (!user) { return res.redirect(401, '/login'); }
         req.login(user, function(err) {
           if (err) { return next(err); }
-          return res.redirect('/', { user});
+          return res.redirect(200, '/');
         });
       })(req, res, next);
 });
@@ -108,6 +108,13 @@ router.get('/list', function(req, res){
     res.render('userList', {
       users:data
     });
+  });
+});
+
+router.get('/all', function(req, res){
+  User.find({}, (err, data) => {
+    if (err) throw err;
+    res.status(200).json(data);
   });
 });
 
