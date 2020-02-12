@@ -81,20 +81,16 @@ router.post('/login', function(req, res, next){
   };
   console.log(user);
   passport.authenticate('local', {
-    successRedirect:'/list',
+    successRedirect:'/',
     failureRedirect:'/users/login',
     failureFlash: true
   },
       function(err, user, info) {
-        console.log('**** inside callback ****');
-        console.log(err + '\n');
-        console.log(user + '\n');
-        console.log(info + '\n');
         if (err) return next(err);
         if (!user) { return res.redirect('login'); }
         req.login(user, function(err) {
           if (err) { return next(err); }
-          return res.redirect('/users/list' + user.id);
+          return res.redirect('/', { user});
         });
       })(req, res, next);
 });

@@ -15,11 +15,11 @@ html
                 a.hdr-btn(href='/projects') Projects
                 a.hdr-btn(href='/about') About
                 a.hdr-btn(href='/contact') Contact
-            if user
-                a.hdr-btn(href='/users/logout') Logout
-            else
-                a.hdr-btn(href='/users/register') Register
-                a.hdr-btn(href='/users/login') Login
+                if user
+                  a.hdr-btn(href='/users/logout') Logout
+                else
+                  a.hdr-btn(href='/users/register') Register
+                  a.hdr-btn(href='/users/login') Login
 
         .container
             != messages('message', locals)
@@ -30,6 +30,6 @@ html
             br
             hr
             footer
-                p Copyright &copy; 2017
+                p jbk &copy; 2020
         script(src='https://code.jquery.com/jquery-3.4.1.min.js')
         script(src='/javascripts/bootstrap.bundle.min.js')
