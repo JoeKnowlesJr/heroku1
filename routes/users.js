@@ -87,10 +87,10 @@ router.post('/login', function(req, res, next){
   },
       function(err, user, info) {
         if (err) return next(err);
-        if (!user) { return res.redirect(401, '/login'); }
+        if (!user) { return res.status(401).redirect('/users/login'); }
         req.login(user, function(err) {
           if (err) { return next(err); }
-          return res.redirect(200, '/');
+          return res.status(200).redirect('/');
         });
       })(req, res, next);
 });
