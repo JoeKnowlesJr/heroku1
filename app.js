@@ -10,7 +10,6 @@ const logger = require('morgan');
 const session = require('express-session');
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
-const { authenticate } = require("./services/auth.service");
 
 const app = express();
 
@@ -67,19 +66,25 @@ app.get('*', function(req, res, next){
     next();
 });
 
-const User = require('./models/user');
-
-// Home Route
-app.get('/', function(req, res){
-    User.find({}, (err, data) => {
-        res.render('index', {
-            users:data
-        });
-    });
-});
+// const User = require('./models/user');
+//
+// // Home Route
+// app.get('/', function(req, res){
+//     User.find({}, (err, data) => {
+//         res.render('index', {
+//             users:data
+//         });
+//     });
+// });
 
 // Route Files
-let users = require('./routes/users');
+const root = require('./routes/index');
+app.use('/', root);
+
+const users = require('./routes/users');
 app.use('/users', users);
+
+const projects = require('./routes/projects');
+app.use('/projects', projects);
 
 module.exports = app;

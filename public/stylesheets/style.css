@@ -113,3 +113,30 @@ footer {
   display: inline-block;
   margin: 0 auto;
 }
+
+.content-wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.add-project-btn-container {
+  position: absolute;
+  padding: 3px;
+  border-radius: 23px;
+  font-size: 17px;
+  width: 100px;
+  height: 30px;
+  z-index: 13;
+  top: 7px;
+  right: 7px;
+  color: #07f;
+  background-color: #007;
+}
+
+.add-project-btn-container>a:hover {
+  color: white;
+}
+
+.add-project-btn-container>a {
+  text-decoration: none;
+}

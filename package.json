@@ -3,9 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "nodemon ./bin/www"
   },
   "dependencies": {
+    "axios": "^0.19.2",
     "bcrypt": "3.0.8",
     "body-parser": "latest",
     "bootstrap": "^4.4.1",
@@ -27,9 +28,13 @@
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
     "path": "^0.12.7",
+    "popper": "^1.0.1",
     "protractor": "^5.4.3",
     "pug": "^2.0.4",
-    "typescript": "^3.7.5"
+    "request": "^2.88.2",
+    "typescript": "^3.7.5",
+    "xml2js": "^0.4.23",
+    "xmlhttprequest": "^1.8.0"
   },
   "devDependencies": {
     "@istanbuljs/nyc-config-typescript": "^1.0.1",

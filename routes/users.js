@@ -75,11 +75,6 @@ router.get('/login', function(req, res){
 
 // Login Process
 router.post('/login', function(req, res, next){
-  const user = {
-    email: req.body.email,
-    password: req.body.password
-  };
-  console.log(user);
   passport.authenticate('local', {
     successRedirect:'/',
     failureRedirect:'/users/login',
@@ -90,7 +85,7 @@ router.post('/login', function(req, res, next){
         if (!user) { return res.status(401).redirect('/users/login'); }
         req.login(user, function(err) {
           if (err) { return next(err); }
-          return res.status(200).redirect('/');
+          return res.status(200).redirect('/users/list');
         });
       })(req, res, next);
 });
