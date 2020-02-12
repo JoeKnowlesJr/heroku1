@@ -9,24 +9,17 @@ html
           div.title
             div.top-display
               span.page Home
-          h1 joeknowles.com
-          div.hdr-btn-wrapper
-            div.hdr-btns
+            h1 joeknowles.com
+            div.hdr-btn-wrapper
+              div.hdr-btns
                 a.hdr-btn(href='/projects') Projects
                 a.hdr-btn(href='/about') About
                 a.hdr-btn(href='/contact') Contact
-                if user
-                    a.hdr-btn(href='/users/logout') Logout
-                else
-                    a.hdr-btn(href='/contact') Contact
-                  <a href="/users/login"><span class="hdr-btn">Login</span></a>
-
-
-
-            </div>
-            </div>
-            </div>
-
+            if user
+                a.hdr-btn(href='/users/logout') Logout
+            else
+                a.hdr-btn(href='/users/register') Register
+                a.hdr-btn(href='/users/login') Login
 
         .container
             != messages('message', locals)
