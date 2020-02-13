@@ -1,13 +1,22 @@
 extends layout2
 
 block content
-  div.content-wrapper
-    h1 Other Visitors
-    ul
-    if users
-      each user in users
-        if user.company
-          li #{user.firstName} from #{user.company}
-        else
-          li #{user.firstName}
+
+  div.block-wrapper
+    div.content-wrapper
+      h1 Last 10 Registered Visitors
+      table.user-list
+        thead
+        tr
+          th Visitor name / Company
+          th Last visit
+        tbody
+        if users
+        each user in users
+          tr
+          if user.company
+            td #{user.firstName} from #{user.company}
+          else
+            td #{user.firstName}
+            td #{user.lastVisit}
 

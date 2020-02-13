@@ -4,12 +4,12 @@ const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcrypt');
 const passport = require('passport');
+const LogRecord = require('../models/logRecord');
 
 
 
 // Register Form
 router.get('/register', function(req, res){
-  console.log('Registering...');
   res.render('register');
 });
 
@@ -44,7 +44,9 @@ router.post('/register', function(req, res){
       email:email,
       password:password,
       company:company,
-      phone:phone
+      phone:phone,
+      created: new Date(),
+      lastVisit: new Date()
     });
 
     bcrypt.genSalt(10, function(err, salt){
@@ -56,7 +58,6 @@ router.post('/register', function(req, res){
         newUser.save(function(err){
           if(err){
             console.log(err);
-            return;
           } else {
             req.flash('success','You are now registered and can log in');
             res.redirect('/users/login');
@@ -69,7 +70,6 @@ router.post('/register', function(req, res){
 
 // Login Form
 router.get('/login', function(req, res){
-  console.log('Getting login form');
   res.render('login');
 });
 
@@ -82,7 +82,17 @@ router.post('/login', function(req, res, next){
   },
       function(err, user, info) {
         if (err) return next(err);
-        if (!user) { return res.status(401).redirect('/users/login'); }
+        if (!user) { return res.status(401).render('login', {
+          errors: [{msg: err}]
+        }); }
+        user.lastVisit = new Date();
+        const entry = user.firstName + " " + user.lastName + " " + user.lastVisit;
+        const lr = new LogRecord({
+            entry: entry
+        });
+        lr.save((err) => {
+          if (err) throw err;
+        });
         req.login(user, function(err) {
           if (err) { return next(err); }
           return res.status(200).redirect('/users/list');

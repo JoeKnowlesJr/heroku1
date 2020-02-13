@@ -1,0 +1,8 @@
+extends layout2
+
+block content
+  div.block-wrapper
+    div.content-wrapper
+      if logs
+        each log in logs
+          p #{log.entry}

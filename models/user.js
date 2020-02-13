@@ -8,7 +8,9 @@ const UserSchema = mongoose.Schema({
     email: {type: String, required: true},
     password: {type: String, required: true},
     company: {type: String, required: false},
-    phone: {type: String, required: false}
+    phone: {type: String, required: false},
+    created: {type: Date, required: false},
+    lastVisit: {type: Date, required: false}
 }, {timestamps: true});
 
 module.exports = mongoose.model('User', UserSchema);

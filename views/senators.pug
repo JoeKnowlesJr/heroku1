@@ -1,4 +1,6 @@
 extends layout2
+include ./mixins/_demRow
+include ./mixins/_repRow
 
 block content
     div.senator-content
@@ -10,4 +12,10 @@ block content
                   th Party
                   th State
                   th Class
-
+                each senator in senators
+                  -const p = senator.party;
+                  if p === 'D'
+                    +demTableRow(senator)
+                  else
+                    +repTableRow(senator)
+                  p(class=({p} === "D") ? 'dem' : 'rep')

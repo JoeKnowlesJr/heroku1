@@ -116,7 +116,7 @@ footer {
 
 .content-wrapper {
   width: 100%;
-  margin: 0 auto;
+  margin: 23px auto 0;
 }
 
 .add-project-btn-container {
@@ -139,4 +139,39 @@ footer {
 
 .add-project-btn-container>a {
   text-decoration: none;
+}
+
+.user-list {
+  font-size: 17px;
+}
+
+.register-form-table td {
+  width: 350px;
+}
+
+.project-add-form-table {
+  font-size: 23px;
+  width: 800px;
+}
+
+.project-add-form-table tr {
+  margin: 10px;
+}
+
+.project-add-form-table td.left {
+  margin: 5px 10px;
+  width: 10%;
+}
+
+.project-add-form-table td.right {
+  margin: 5px 10px;
+  width: 20%;
+}
+
+.rep {
+  background-color: #700;
+}
+
+.dem {
+  background-color: #007;
 }

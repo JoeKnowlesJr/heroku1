@@ -61,7 +61,6 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 app.get('*', function(req, res, next){
-    console.log('*** all routes ***');
     res.locals.user = req.user || null;
     next();
 });

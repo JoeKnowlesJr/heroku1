@@ -1,14 +1,13 @@
-const axios = require('axios');
+const Request = require("request");
 
 function doGet(req, res, next) {
-    axios.get(req.xmlurl)
-        .then(response => {
-            next(req, response);
-        })
-        .catch(error => {
-            console.log(error);
-        });
-    next(req, res);
+    Request.get(req.xmlurl, (error, response, body) => {
+        if(error) {
+            return console.dir(error);
+        }
+        req.body.data = body;
+        next(req, res);
+    });
 }
 
 module.exports = { doGet };
