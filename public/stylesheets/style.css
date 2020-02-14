@@ -114,8 +114,13 @@ footer {
   margin: 0 auto;
 }
 
-.content-wrapper {
+.block-wrapper {
   width: 100%;
+  align-items: center;
+}
+
+.content-wrapper {
+
   margin: 23px auto 0;
 }
 
@@ -168,10 +173,27 @@ footer {
   width: 20%;
 }
 
-.rep {
-  background-color: #700;
+td.sen {
+  text-align: left;
+  padding: 0 17px;
 }
 
-.dem {
-  background-color: #007;
+.senator-content {
+  text-align: center;
+}
+
+.senator-table-container {
+  font-size: 17px;
+}
+
+.senator-table {
+  margin: 0 auto;
+}
+
+.senator-table th {
+  text-align: center;
+}
+
+.sen-filter-container {
+  display: none;
 }

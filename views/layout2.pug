@@ -4,12 +4,12 @@ html
         title Joe's Portfolio
         link(rel='stylesheet' href='/stylesheets/bootstrap.min.css')
         link(rel='stylesheet' href='/stylesheets/style.css')
-    body
+    body(onscroll='bodyScroll();')
         div.header
           div.title
             div.top-display
               span.page Home
-            h1 joeknowles.com
+            h1 joeknowles.net
             div.hdr-btn-wrapper
               div.hdr-btns
                 a.hdr-btn(href='/projects') Projects
@@ -31,7 +31,10 @@ html
             block content
             br
             hr
-            footer
+            footer.footer
                 p jbk &copy; 2020
         script(src='https://code.jquery.com/jquery-3.4.1.min.js')
         script(src='/javascripts/bootstrap.bundle.min.js')
+        script(src='/javascripts/scroll.fade.js')
+
+        script(src='/javascripts/onready.js')

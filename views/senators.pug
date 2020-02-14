@@ -1,11 +1,16 @@
 extends layout2
-include ./mixins/_demRow
-include ./mixins/_repRow
 
 block content
     div.senator-content
+        h1 The 100 US Senators
+        h5 Data from
+          a(href='https://www.senate.gov/general/contact_information/senators_cfm.xml') https://www.senate.gov/general/contact_information/senators_cfm.xml
+        .sen-filter-container
+          a(href='/senators/R') Republicans
+          a(href='/senators/D') Democrats
+          a(href='/senators/I') Independents
         div.senator-table-container
-            table
+            table.senator-table
                 tr
                   th First
                   th Last
@@ -13,9 +18,11 @@ block content
                   th State
                   th Class
                 each senator in senators
-                  -const p = senator.party;
-                  if p === 'D'
-                    +demTableRow(senator)
-                  else
-                    +repTableRow(senator)
-                  p(class=({p} === "D") ? 'dem' : 'rep')
+                  tr
+                    td.sen=senator.first_name
+                    td.sen=senator.last_name
+                    td.sen.party=senator.party
+                    td.sen=senator.state
+                    td.sen=senator.class
+
+        script(src='/javascripts/senator.colors.js')
