@@ -1,14 +1,19 @@
-extends layout2
+extends layout
 
 block content
     div.senator-content
         h1 The 100 US Senators
-        h5 Data from
-          a(href='https://www.senate.gov/general/contact_information/senators_cfm.xml') https://www.senate.gov/general/contact_information/senators_cfm.xml
+        h5 Data from -
+          a(href='https://www.senate.gov/general/contact_information/senators_cfm.xml')  https://www.senate.gov/general/contact_information/senators_cfm.xml
+        h5 Request sent with request.js, Response parsed with xml2js.js
         .sen-filter-container
-          a(href='/senators/R') Republicans
-          a(href='/senators/D') Democrats
-          a(href='/senators/I') Independents
+          button(type='button' onclick="senPartyFilter('R');") Republicans
+          button(type='button' onclick="senPartyFilter('D');") Democrats
+          button(type='button' onclick="senPartyFilter('I');") Independents
+          button(type='button' onclick="senClassFilter('Class I');") Class I
+          button(type='button' onclick="senClassFilter('Class II');") Class II
+          button(type='button' onclick="senClassFilter('Class III');") Class III
+
         div.senator-table-container
             table.senator-table
                 tr
@@ -23,6 +28,7 @@ block content
                     td.sen=senator.last_name
                     td.sen.party=senator.party
                     td.sen=senator.state
-                    td.sen=senator.class
+                    td.sen.senClass=senator.class
 
         script(src='/javascripts/senator.colors.js')
+        script(src='/javascripts/senator.filter.js')

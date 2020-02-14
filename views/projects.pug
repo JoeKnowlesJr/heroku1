@@ -1,8 +1,10 @@
-extends layout2
+extends layout
 
 block content
-    div.add-project-btn-container
-      a(href='/projects/add') Add Project
+    if user
+      if user.role === 'admin'
+        div.add-project-btn-container
+          a(href='/projects/add') Add Project
     div.block-wrapper
       div.content-wrapper
       h1 Projects

@@ -6,6 +6,7 @@ router.get('/', (req, res, next) => {
     Project.find({}, (err, result) => {
        if (err) throw err;
         res.render('projects', {
+            user: res.locals.user,
             projects: result
         });
     });

@@ -11,10 +11,6 @@ function colorize() {
             elms[i].parentElement.style.color = "yellow";
         }
     }
-
-    // $('td.party:contains(R)').css('color', 'red');
-    // $('td.party:contains(D)').css('color', 'blue');
-    // $('td.party:contains(I)').css('color', 'yellow');
 }
 
 

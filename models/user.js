@@ -9,6 +9,7 @@ const UserSchema = mongoose.Schema({
     password: {type: String, required: true},
     company: {type: String, required: false},
     phone: {type: String, required: false},
+    role: {type: String, required: false},
     created: {type: Date, required: false},
     lastVisit: {type: Date, required: false}
 }, {timestamps: true});

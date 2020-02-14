@@ -1,41 +1,40 @@
 doctype html
 html
-  head
-    title Joe's Portfolio
-    link(rel='stylesheet' href='/stylesheets/bootstrap.min.css')
-    link(rel='stylesheet' href='/stylesheets/style.css')
-  body
-    <div class="header">
-      <div class="title">
-        <div class="top-display">
-          <span class="page">Home</span>
-        </div>
-        <h1>joeknowles.com</h1>
-        <div class="hdr-btn-wrapper">
-          <div class="hdr-btns">
-            <a href="projects.html" class="hdr-btn">Projects</a>
-            <a href="about.html"><span class="hdr-btn">About</span></a>
-            <a href="/users/list"><span class="hdr-btn">Contact</span></a>
-    if user
-      <a href="/users/logout"><span class="hdr-btn">Logout</span></a>
-    else
-      <a href="/users/register"><span class="hdr-btn">Register</span></a>
-      <a href="/users/login"><span class="hdr-btn">Login</span></a>
+    head
+        title Joe's Portfolio
+        link(rel='stylesheet' href='/stylesheets/bootstrap.min.css')
+        link(rel='stylesheet' href='/stylesheets/style.css')
+    body(onscroll='bodyScroll();')
+        div.header
+          div.title
+            div.top-display
+              span.page Home
+            h1 joeknowles.net
+            div.hdr-btn-wrapper
+              div.hdr-btns
+                a.hdr-btn(href='/projects') Projects
+                a.hdr-btn(href='/about') About
+                a.hdr-btn(href='/contact') Contact
+                a.hdr-btn(href='/senators') Senators
+                a.hdr-btn(href='/logs') Logs
+                if user
+                  a.hdr-btn(href='/users/logout') Logout
+                else
+                  a.hdr-btn(href='/users/register') Register
+                  a.hdr-btn(href='/users/login') Login
 
-          </div>
-      </div>
-      </div>
-    </div>
+        .container
+            != messages('message', locals)
+            if errors
+                each error, i in errors
+                    div(class="alert alert-danger") #{error.msg}
+            block content
+            br
+            hr
+            footer.footer
+                p jbk &copy; 2020
+        script(src='https://code.jquery.com/jquery-3.4.1.min.js')
+        script(src='/javascripts/bootstrap.bundle.min.js')
+        script(src='/javascripts/scroll.fade.js')
 
-    .container
-      != messages('message', locals)
-      if errors
-        each error, i in errors
-          div(class="alert alert-danger") #{error.msg}
-      block content
-      br
-      hr
-      footer
-        p Copyright &copy; 2017
-    script(src='https://code.jquery.com/jquery-3.4.1.min.js')
-    script(src='/javascripts/bootstrap.bundle.min.js')
+        script(src='/javascripts/onready.js')
