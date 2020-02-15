@@ -1,12 +1,17 @@
 const express = require('express');
 const router = express.Router();
 const Project = require('../models/project');
+const User = require('../models/user');
 
 router.get('/', (req, res, next) => {
     Project.find({}, (err, result) => {
-       if (err) throw err;
+        if (err) throw err;
+        result[0].imgUrl = '/img/maps_icon.jpg';
+        result[1].imgUrl = '/img/blue_dollar_sign.png';
+        console.log(result);
+        User.update(req.user);
         res.render('projects', {
-            user: res.locals.user,
+            user: req.user,
             projects: result
         });
     });

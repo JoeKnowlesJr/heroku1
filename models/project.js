@@ -7,6 +7,7 @@ const ProjectSchema = mongoose.Schema({
     projectName: {type: String, required: true},
     description: {type: String, required: true},
     githubUrl: {type: String, required: false},
+    imgUrl: {type: String, required: false},
     created: {type: Date, required: false},
     updated: {type: Date, required: false}
 }, {timestamps: true});

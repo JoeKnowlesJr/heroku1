@@ -83,7 +83,7 @@ router.post('/login', function(req, res, next){
       function(err, user, info) {
         if (err) return next(err);
         if (!user) { return res.status(401).render('login', {
-          errors: [{msg: err}]
+          errors: [{msg: 'Invalid credential'}]
         }); }
         user.lastVisit = new Date();
         const entry = user.firstName + " " + user.lastName + " " + user.lastVisit;

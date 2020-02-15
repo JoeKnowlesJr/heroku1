@@ -1,0 +1,6 @@
+mixin projectView(p)
+  .project
+    .project-wrapper
+      tr
+        td: img(class='pj-icon' src=p.imgUrl)
+        td: a(href='#') #{p.projectName}

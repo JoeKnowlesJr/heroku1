@@ -1,4 +1,5 @@
 extends layout
+include mixins/project-view
 
 block content
     if user
@@ -9,6 +10,7 @@ block content
       div.content-wrapper
       h1 Projects
       if projects
+        table
         each p in projects
-          p #{p.projectName}
+          +projectView(p)
 
