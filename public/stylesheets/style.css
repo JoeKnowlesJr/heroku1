@@ -194,4 +194,6 @@ td.sen {
   text-align: center;
 }
 
-
+button.senBtn {
+  font-size: 17px;
+}

@@ -7,12 +7,15 @@ block content
           a(href='https://www.senate.gov/general/contact_information/senators_cfm.xml')  https://www.senate.gov/general/contact_information/senators_cfm.xml
         h5 Request sent with request.js, Response parsed with xml2js.js
         .sen-filter-container
-          button(type='button' onclick="senPartyFilter('R');") Republicans
-          button(type='button' onclick="senPartyFilter('D');") Democrats
-          button(type='button' onclick="senPartyFilter('I');") Independents
-          button(type='button' onclick="senClassFilter('Class I');") Class I
-          button(type='button' onclick="senClassFilter('Class II');") Class II
-          button(type='button' onclick="senClassFilter('Class III');") Class III
+          div
+            span#filters
+
+          button(class='senBtn' type='button' onclick="senPartyFilter('R');") Republicans
+          button(class='senBtn' type='button' onclick="senPartyFilter('D');") Democrats
+          button(class='senBtn' type='button' onclick="senPartyFilter('I');") Independents
+          button(class='senBtn' type='button' onclick="senClassFilter('Class I');") Class I
+          button(class='senBtn' type='button' onclick="senClassFilter('Class II');") Class II
+          button(class='senBtn' type='button' onclick="senClassFilter('Class III');") Class III
 
         div.senator-table-container
             table.senator-table
