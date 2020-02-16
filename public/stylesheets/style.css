@@ -37,16 +37,6 @@ body {
   line-height: .1em;
 }
 
-.page {
-  border-radius: 30px;
-  width: 200px;
-  color: #3f3;
-  background-color: #555;
-  text-shadow: 1px 1px 3px #00f;
-  padding: 3px 13px;
-  font-size: 15px;
-}
-
 .title {
   padding: 5px;
   text-align: center;
@@ -102,6 +92,31 @@ footer {
   position: fixed;
   bottom: 0;
   margin: 0 40%;
+}
+
+/*#clock {*/
+/*  margin: 3px 0 0;*/
+/*  padding: 7px;*/
+/*  background-color: #005;*/
+/*  color: #0ff;*/
+/*  border: 3px solid #0ff;*/
+/*  border-radius: 23px;*/
+/*  text-shadow: none;*/
+/*  font-size: 13px;*/
+/*}*/
+
+#clock {
+  border: 3px solid #0ff;
+  border-radius: 30px;
+  width: 200px;
+  color: #3f3;
+  background-color: #555;
+  text-shadow: none;
+  padding: 3px 13px;
+  font-size: 15px;
+  -webkit-box-shadow: inset 3px 3px 3px 0 rgba(0,0,0,1);
+  -moz-box-shadow: inset 3px 3px 3px 0 rgba(0,0,0,1);
+  box-shadow: inset 3px 3px 3px 0 rgba(0,0,0,1);
 }
 
 .login-box {
