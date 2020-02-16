@@ -52,4 +52,8 @@ router.get('/contact', (req, res, next) => {
   res.render('contact');
 });
 
+router.get('/qod', (req, res, next) => {
+  res.send(re);
+});
+
 module.exports = router;
