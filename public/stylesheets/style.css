@@ -38,7 +38,6 @@ body {
 }
 
 .title {
-  padding: 5px;
   text-align: center;
   text-shadow: 3px 3px 5px #3f3;
   font-size: 42px;
@@ -94,29 +93,43 @@ footer {
   margin: 0 40%;
 }
 
-/*#clock {*/
-/*  margin: 3px 0 0;*/
-/*  padding: 7px;*/
-/*  background-color: #005;*/
-/*  color: #0ff;*/
-/*  border: 3px solid #0ff;*/
-/*  border-radius: 23px;*/
-/*  text-shadow: none;*/
-/*  font-size: 13px;*/
-/*}*/
+@font-face {
+  font-family: digital;
+  src: url('../fonts/digital-7.ttf');
+}
+
+@font-face {
+  font-family: digital2;
+  src: url('../fonts/mbta.ttf');
+}
 
 #clock {
+  display: inline-block;
+  margin: 13px 13px 0 0;
+  font-family: digital2, sans-serif;
   border: 3px solid #0ff;
   border-radius: 30px;
-  width: 200px;
   color: #3f3;
   background-color: #555;
   text-shadow: none;
-  padding: 3px 13px;
-  font-size: 15px;
+  padding: 11px 11px 7px;
+  font-size: 11px;
   -webkit-box-shadow: inset 3px 3px 3px 0 rgba(0,0,0,1);
   -moz-box-shadow: inset 3px 3px 3px 0 rgba(0,0,0,1);
   box-shadow: inset 3px 3px 3px 0 rgba(0,0,0,1);
+}
+
+.clock-part {
+  min-width: 23px;
+  display: inline-block;
+}
+
+.clock-part#m {
+  margin-left: 5px;
+}
+
+.sec {
+  width: 3px;
 }
 
 .login-box {
@@ -216,3 +229,14 @@ button.senBtn {
 .pj-icon {
   width: 150px;
 }
+
+table.pj-table tr {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pjtd {
+  display: inline-block;
+  margin: 10px;
+}
+

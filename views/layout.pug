@@ -4,11 +4,15 @@ html
     title Joe's Portfolio
     link(rel='stylesheet' href='/stylesheets/bootstrap.min.css')
     link(rel='stylesheet' href='/stylesheets/style.css')
-    body(onload="updateClock(); setInterval('updateClock()', 1000 )" onscroll='bodyScroll();')
+    body(onload="updateClock(); setInterval('updateClock()', 1000 );" onscroll='bodyScroll();')
         div.header
           div.title
             div.top-display
-              span#clock &nbsp
+              span#clock
+                span#h.clock-part &nbsp
+                span#m.clock-part &nbsp
+                span#s.clock-part.sec &nbsp
+                span#t.clock-part &nbsp
             h1 joeknowles.net
             div.hdr-btn-wrapper
               div.hdr-btns

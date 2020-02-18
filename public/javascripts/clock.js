@@ -13,5 +13,8 @@ function updateClock ( ) {
 
     currentHours = ( currentHours === 0 ) ? 12 : currentHours;
 
-    document.getElementById("clock").firstChild.nodeValue = currentHours + ":" + currentMinutes + ":" + currentSeconds + " " + timeOfDay;
+    document.getElementById("h").firstChild.nodeValue = currentHours + " :";
+    document.getElementById("m").firstChild.nodeValue = currentMinutes + " :";
+    document.getElementById("s").firstChild.nodeValue = currentSeconds + "  ";
+    document.getElementById("t").firstChild.nodeValue = timeOfDay;
 }

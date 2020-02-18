@@ -1,23 +1,14 @@
 const Request = require("request");
 
-function doSenGet(req, res, next) {
-    Request.get(req.xmlurl, (error, response, body) => {
+function doGet(reqUrl, next) {
+    console.log('Inside doGet!');
+    Request.get(reqUrl, (error, response, body) => {
         if(error) {
             return console.dir(error);
         }
-        req.body.data = body;
-        next(req, res);
+        console.log(body);
+        next (body);
     });
 }
 
-function doQuoteGet(req, res, next) {
-    Request.get(req.qurl, (error, response, body) => {
-        if(error) {
-            return console.dir(error);
-        }
-        req.body.data = body;
-        next(req, res);
-    });
-}
-
-module.exports = { doGet: doSenGet };
+module.exports = { doGet };
