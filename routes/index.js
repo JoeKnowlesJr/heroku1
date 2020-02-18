@@ -9,9 +9,7 @@ router.get('/', function(req, res) {
 });
 
 router.get('/senators', (req, resp, next) => {
-  console.log('Getting senators!');
   const senators = sServ.getSenators(senators => {
-    console.log('Got senators!');
     resp.render('senators', {
       senators: senators
     });
