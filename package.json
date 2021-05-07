@@ -34,7 +34,7 @@
     "pug": "^2.0.4",
     "request": "^2.88.2",
     "typescript": "^3.7.5",
-    "underscore": "^1.9.2",
+    "underscore": "^1.12.1",
     "xml2js": "^0.4.23",
     "xmlhttprequest": "^1.8.0"
   },
